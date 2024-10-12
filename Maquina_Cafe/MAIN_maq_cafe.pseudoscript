@@ -1,0 +1,53 @@
+se(power==1){
+
+x=0
+
+faz:
+    se(agua<10){
+        imprime("Nivel baixo de água")
+    }
+    se(sensorcapsula>=1){
+        imprime("Depósito de capsulas cheio")
+    }
+    se(pressao<90 ou pressao>110){
+        imprime("Troca de bomba de pressao necessaria")
+    }
+
+    se(temperaturaresistencia<95){
+        imprime("Temperatura abaixo do recomendado, por favor aguarde enquanto a resistencia aquece ")
+        x=x+1
+    }
+    se(temperaturaresistencia>105){
+        imprime("Temperatura acima do recomendado, por favor desligar a máquina por 5 minutos")
+        x=x+1
+    }
+    se(x>=3){
+        imprime("Problemas com a resistencia da máquina, por favor trocar")
+    }
+
+enquanto(agua<10 ou sensorcapsula>=1 ou pressão<90 ou temperaturaresistencia<95 ou temperaturaresistencia>105)
+
+0 = "Expresso"
+1 = "Capuccino"
+2 = "Descafeinado"
+
+a = "Curto"
+b = "Médio"
+c = "Cheio"
+
+ListaCafe = ["Expresso", "Capuccino", "Descafeinado"]
+ListaTamanho = ["Curto", "Médio", "Cheio"]
+
+
+imprime("Olá! Aqui há os differentes cafés disponíveis:", ListaCafe)
+entrada("Pressione o café que deseja depois de garantir que a cápsula correta foi inserida.", cafe)
+
+imprime("Aqui estão os differentes tamanhos disponíveis:" ListaTamanho)
+entrada("Pressione o tamanho do café que você gostaria.", tamanho)
+
+imprime("A fazer: " + cafe + tamanho)
+
+
+}
+
+power=0
