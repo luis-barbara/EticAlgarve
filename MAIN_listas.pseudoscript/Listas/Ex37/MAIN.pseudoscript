@@ -1,0 +1,16 @@
+# Verifique se uma string é um palíndromo
+
+string = "aeiouoiea"
+
+tamanhoString = tamanho(string)
+
+funcao string_palindromo(string)
+    para i de 0 até tamanhoString // 2
+        se string[i] != string[tamanhoString -1 - i]
+            retorna falso   # Não é um palíndromo
+    retorna verdadeiro   # É um palíndromo
+
+se string_palindromo(array)
+    imprime("A string é um palíndromo")
+senao
+    imprime("A string não é um palíndromo")

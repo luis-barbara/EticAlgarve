@@ -1,0 +1,5 @@
+# Acesse o terceiro elemento de um array.
+
+lista = [1, 2, 3, 4, 5]
+terceiroElemento = lista [3]
+imprime(lista)

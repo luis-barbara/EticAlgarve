@@ -1,0 +1,15 @@
+/* Desenvolva um programa que classifique uma pessoa como criança (0-12 anos),
+adolescente (13-17 anos), adulto (18-59 anos) ou idoso (60 anos ou mais). */
+
+entrada("Insira a sua idade: ", idade)
+
+se idade < 12
+    imprime("criança")
+senao idade >= 60
+    imprime("idoso")
+senao idade >= 13 e <= 17
+    imprime("adolescente")
+senao idade >= 18 e <= 59
+    imprime("adulto")
+
+

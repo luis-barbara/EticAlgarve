@@ -1,0 +1,5 @@
+# Declare um array com 5 números inteiros.
+
+lista = [1, 2, 3, 4, 5]
+imprime(lista)
+

@@ -1,0 +1,23 @@
+# Rotacione os elementos de um array para a direita.
+
+array[1, 2, 3, 4, 5]
+arrayRotacionado[]
+
+tamanhoArray = tamanho(array)
+
+funcao rotacionarDireita(array):
+    se tamanhoArray == 0:
+        retorna array
+
+    ultimoElemento = array[tamanhoArray - 1]
+
+    para i de (tamanhoArray - 1, 0, -1)
+        array[i] = array[i - 1]
+
+    array[0] = ultimoElemento
+
+    retorna array
+
+arrayRotacionado = rotacionarDireita(array)
+
+imprime("Array rotacionado:" + arrayRotacionado)

@@ -1,0 +1,12 @@
+#Escreva um programa que compare dois números e imprima o maior.
+
+entrada("Insere o valor 1: ", valor_1)
+entrada("Insere o valor 2: ", valor_2)
+
+Se valor_1 > valor_2
+	imprime("O maior valor é: " + valor_1)
+senao
+	imprime("O maior valor é: " + valor_2)
+senao 
+	imprime("Os valores sao iguais")
+

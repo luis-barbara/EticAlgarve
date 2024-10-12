@@ -1,0 +1,19 @@
+# Conte o número de vogais numa string.
+
+string = "Ola, Mundo!"
+
+funcao contarVogais(string)
+    vogais = "aeiouAEIOU"   # Definir as vogais
+    contador = 0
+
+    para cada caracter na string 
+        se caracter esta em vogais
+            contador = contador + 1
+
+    retornar contador
+
+
+numero_vogais = contarVogais(string)
+
+imprime("O número de vogais é:", numero_vogais)
+

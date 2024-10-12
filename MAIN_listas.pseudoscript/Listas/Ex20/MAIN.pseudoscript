@@ -1,0 +1,13 @@
+# Encontre a média dos valores num array.
+
+array[1, 2, 3, 4, 5]
+
+soma = 0
+tamanhoArray = tamanho(array)
+
+para(i=0, i < tamanhoArray, i++)
+    soma = soma + array[i]
+
+media = soma / tamanho(array)
+
+imprime("A média dos valores no array é: ", media)

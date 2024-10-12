@@ -1,0 +1,31 @@
+# Implemente um algoritmo de pesquisa (por exemplo, Linear Search) num array.
+
+array[1, 2, 3, 4, 5]
+
+entrada("Insere um numero", numero)
+
+tamanhoArray = tamanho(array)
+
+/*para cada i de 0 a n-1
+    se numero == array[i]
+    return true
+return false*/
+
+
+ # Função para buscar a posição de um número no array
+ funcao linearSearch(array, numero):
+        # Iterar sobre o array de 0 até n-1
+    para cada i de 0 a tamanhoArray - 1:
+        se numero == array[i]:
+                # Retorna a posição (índice) se o número for encontrado
+            retorne i
+    # Se o número não for encontrado, retorna -1 (indicando que não está no array)
+    retorne -1
+
+# Buscar a posição do número inserido pelo usuário
+posicao = linearSearch(array, numero)
+
+se posicao != -1
+    imprime("A posição do número " + numero + " no array é: " + posicao)
+senao
+    imprime("O número " + numero + " não está no array ")

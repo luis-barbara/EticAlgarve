@@ -1,0 +1,9 @@
+/*Desenvolva um programa que calcule o valor do transporte de acordo com a distância
+percorrida, sendo €1,50 por quilômetro*/
+
+entrada("Insira a distância em km: ", distância)
+
+funcao valorTransporte(distancia):
+    resultado = distancia * 1.5
+    retorne resultado
+

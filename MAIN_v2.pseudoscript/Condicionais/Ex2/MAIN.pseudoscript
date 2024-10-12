@@ -1,0 +1,9 @@
+#Crie um programa que verifique se um número é par ou ímpar
+
+entrada("Insira um valor numérico inteiro: ", valor)
+se valor for divisivel por 2
+    imprime("o valor é par")
+se nao
+    imprime("o valor é ímpar")
+
+

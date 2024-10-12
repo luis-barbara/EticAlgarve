@@ -1,0 +1,12 @@
+/* Escreva um programa que calcule o desconto do NISS de um salário, considerando 11%
+para salários até €1.100,00 e 27,5% para salários acima desse valor */
+
+entrada("Insira o salário: ", salário)
+
+
+se salário <= 1100
+    NISS = salario - (salario * 0.11)
+senao
+    NISS = salario - (salario * 0.275)
+
+imprime("O valor do NISS é: ", NISS)

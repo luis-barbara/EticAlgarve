@@ -1,0 +1,23 @@
+# Verifique se um array está ordenado.
+
+array[]
+numero = 0
+
+entrada("Insere 5 numeros para o array", numero)
+
+enquanto numero < 5
+	numeros_entrada = ("Insere o número"+ (numero + 1))
+	array.adicionar(numero_entrada)
+	numero = numero + 1
+
+funcao verificar_array_ordenado(array)
+	tamanhoArray = tamanho(array)	
+	para i = 0 até tamanhoArray -2
+		se array[i] > array[i+1]
+		retorna falso
+	retorna verdadeiro
+
+se verificar_array_ordenado(array)
+	imprimir("O array está ordenado")
+senao
+	imprimir("O array não está ordenado")

@@ -1,0 +1,74 @@
+# Remova elementos duplicados de um array.
+
+array[]
+
+entrada("Insere 5 números inteiros para array")
+para(i=0, i < 5, i++) # ou para i = 0 até 4 faça:
+		numero = entrada("Insere um número", i + 1)
+	
+	duplicado = falso	
+	para(j = 0; j < i; j++) faça
+            se numero == array[i] então
+                duplicado = verdadeiro
+                quebra()
+            fim do se
+        fim do para
+		
+	se duplicado == falso, entao:
+		array.adicionar(numero)
+	senao
+		imprime("O valor ", numero, " esta em duplicado, insira outro valor")
+		i--
+	fim do se
+fim do para
+
+para(i = 0; i < tamanho(array); i++):
+    imprime(array[i])
+fim do para
+
+
+ou
+
+
+array = []
+
+entrada("Insira 5 números inteiros para o array")
+para i = 0 até 4:
+    numero = entrada("Insira um número", i + 1)
+
+    se numero não está em array então
+        array.adicionar(numero)
+    senao
+        imprime("O valor ", numero, " já está no array, insira outro valor")
+        i--
+	
+para i = 0 até tamanho(array) - 1 :
+    imprime(array[i])
+fim do para
+
+
+ou
+
+
+array = []
+
+entrada("Insira 5 números inteiros para o array")
+
+para i = 0 até 4:
+    enquanto for verdadeiro
+        numero = entrada("Insira o número", i + 1)
+    
+    se numero nao estiver no array:
+        array.adicionar(numero)
+        quebra()
+    senao 
+        imprime("O valor ", numero, " já está no array, insira outro valor")
+
+tamanhoArray = tamanho(array)
+
+para i = 0 até tamanho(array) - 1 :
+    imprime(array[i])
+
+
+    
+

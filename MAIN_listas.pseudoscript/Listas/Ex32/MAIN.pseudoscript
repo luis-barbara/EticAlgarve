@@ -1,0 +1,32 @@
+# Implemente um algoritmo de pesquisa binária num array ordenado.
+
+array = [1, 2, 3, 4, 5, 6, 7, 8]
+
+tamanhoArray = tamanho(array) 
+
+funcao binarySearch(array, alvo):
+	inicio = 0
+        fim = tamanhoArray - 1
+	
+	enquanto inicio <= fim
+		meio = (inicio + fim) // 2
+		se array[meio] == alvo
+			retorna meio    # retorna o indice do elemento encontrado
+		senao array[meio] < alvo:
+			inicio = meio + 1
+		senao:
+			fim = meio - 1
+
+	retorna - 1    # se o valor nao for encontrado
+
+
+# definir o elemento a procurar
+entrada("Insere um número a procurar no array", alvo)
+
+# aplicar a funcao binarySearch
+indice = binarySearch(array, alvo):
+
+se indice != 1
+	imprime("Elemento" + alvo + "encontrado no índice" + indice + "do array")
+senao
+	imprime("Elemento" + alvo + "nao encontrado no array")	

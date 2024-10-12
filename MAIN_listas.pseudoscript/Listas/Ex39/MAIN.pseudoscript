@@ -1,0 +1,19 @@
+# Substitua todas as ocorrências de uma letra por outra numa string.
+
+string = "O meu nome é Luis"
+
+lentraAntiga = "o"
+letraNova = "a"
+resultado = ""
+
+funcao substituirLetra(string, letraAntiga, letraNova)
+    para i de 0 ate tamanho(string) - 1
+        se string[i] == letraAntiga
+            resultado = resultado + letraNova
+        senao
+            resultado = resultado + string[i]
+    retornar resultado
+
+stringAlterada = substituirLetra(string, letraAntiga, letraNova)
+
+imprime(stringAlterada)

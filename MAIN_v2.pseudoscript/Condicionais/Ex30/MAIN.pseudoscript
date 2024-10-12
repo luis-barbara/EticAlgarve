@@ -1,0 +1,20 @@
+# Crie um programa que determine se um número é primo de Fermat.
+
+entrada("Insere um número inteiro positivo: ", número)
+
+se numero < 0
+	imprime("Insere um número inteiro positivo")
+senao número < 5 
+	Calcular Fnúmero
+	Fnumero = 2^(2^numero) + 1
+
+#verificar se Fnumero é primo
+	se Fnumero é primo
+		imprime(Fnumero, "é um número primo de Fermat")
+	senao
+		imprime(Fnumero, "não é um número primo de Fermat")
+senao
+	imprime("O número não é primo de fermat")
+
+
+/* Um número primo de Fermat é um número que pode ser expresso na forma Fn = 2^(2^n) + 1, onde n é um numero inteiro positivo.

@@ -1,0 +1,27 @@
+# Encontre o maior valor num array.
+
+array = []
+
+entrada("Insira 5 números inteiros para o array")
+
+para i = 0 até 4:
+    enquanto for verdadeiro
+        numero = entrada("Insira o número", i + 1)
+    
+    se numero nao estiver no array:
+        array.adicionar(numero)
+        quebra()
+    senao 
+        imprime("O valor ", numero, " já está no array, insira outro valor")
+
+
+maior_numero = array[0]
+
+para i = 0 até 4:
+    se array[i] > maior_numero
+        maior_numero = array[i]
+
+imprime("O maior valor no array é: ", maior_numero)
+
+
+

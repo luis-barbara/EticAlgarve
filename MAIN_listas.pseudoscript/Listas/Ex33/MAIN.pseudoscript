@@ -1,0 +1,20 @@
+# Verifique se um array é um palíndromo
+
+array[1, 2, 3, 2, 1]
+
+tamanhoArray = tamanho(array)
+
+funcao array_palindromo(array)
+    para i de 0 até tamanhoArray // 2
+        se array[i] != array[tamanhoArray -1 - i]
+            retorna falso   # Não é um palíndromo
+    retorna verdadeiro   # É um palíndromo
+
+se array_palindromo(array)
+    imprime("O array é um palíndromo")
+senao
+    imprime("O array não é um palíndromo")
+
+
+
+/* Um palíndromo é uma sequência que é lida da mesma forma de frente para trás e de trás para frente. */

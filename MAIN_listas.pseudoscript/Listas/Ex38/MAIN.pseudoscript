@@ -1,0 +1,16 @@
+# Concatene duas strings.
+
+string1 = "O meu nome é"
+string2 = "Luis"
+resultado = ""
+
+tamanhoString = tamanho(string)
+
+funcao adicionarString(string, resultado)
+	para i de 0 até tamanhoString - 1
+		resultado = resultado + string[i]
+
+adicionarString(string1, resultado)
+adicionarString(string2, resultado)
+
+imprime(resultado[i])

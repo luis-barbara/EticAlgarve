@@ -1,0 +1,11 @@
+#Desenvolva um programa que calcule o preço final de um produto, considerando um
+desconto de 10% se o valor for superior a €100,00.
+
+entrada("Insere um valor: ", valor)
+
+se valor > 100
+executar a funcao desconto(valor)
+	resultado = valor - (valor * 0.1)
+	retorne resultado
+senao
+	imprime("O preço final é:, " + valor)

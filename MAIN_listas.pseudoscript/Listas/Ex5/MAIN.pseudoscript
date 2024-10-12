@@ -1,0 +1,6 @@
+# Adicione um elemento ao final de um array.
+
+lista = [1, 2, 3, 4, 5]
+lista.adicionar("6")
+imprime(lista)
+

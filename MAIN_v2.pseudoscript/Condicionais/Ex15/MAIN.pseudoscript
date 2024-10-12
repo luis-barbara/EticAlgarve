@@ -1,0 +1,17 @@
+#  Escreva um programa que determine se um ano é ou não um número primo
+
+
+#função verificar se o número é primo
+função primo(n)
+    verifica se n < 2 
+        return false
+    Loop para verificar se n é divisível por qualquer número de 2 até a raiz quadrada de n
+        return false se encontrar um divisor, caso contrário, returna True.
+
+entrada("Insira um ano: ", ano)
+
+# Verifica se o ano é primo
+se primo(ano)
+    imprime("O ano é primo")
+senao
+    imprime("O ano não é primo")

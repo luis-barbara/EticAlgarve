@@ -1,0 +1,7 @@
+# Crie um programa que determine se um número é uma potência de 2
+
+entrada("Insira um número: ", número)
+
+fazer um loop que divide sucessivamente o número por 2
+se resto = 0 e resultado = 1
+    imprime("O número é uma potência de 2")

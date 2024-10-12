@@ -1,0 +1,28 @@
+# Busque a posição de um elemento num array.
+
+array[1, 2, 3, 4, 5]
+
+entrada("Insere um numero de 1 a 5", numero)
+
+tamanhoArray = tamanho(array)
+
+/*para cada i de 0 a n-1
+    se numero == array[i]
+    return true
+return false*/
+
+
+ # Função para buscar a posição de um número no array
+ funcao procurarPosicao(array, numero):
+        # Iterar sobre o array de 0 até n-1
+    para cada i de 0 a tamanhoArray - 1:
+        se numero == array[i]:
+                # Retorna a posição (índice) se o número for encontrado
+            retorne i
+    # Se o número não for encontrado, retorna -1 (indicando que não está no array)
+    retorne -1
+
+# Buscar a posição do número inserido pelo usuário
+posicao = procurarPosicao(array, numero)
+
+imprime("A posição do número " + numero + " no array é: " + posicao)

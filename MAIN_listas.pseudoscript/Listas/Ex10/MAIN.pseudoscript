@@ -1,0 +1,11 @@
+# Preencha um array com valores fornecidos pelo utilizador.
+
+cores[]
+
+quantidade = ("Insere as tuas 3 cores favoritas")
+    
+enquanto quantidade < 3
+    cores_entrada = ("Insere a cor"+ (quantidade + 1))
+    cores.adiciona(cores_entrada)
+    
+    imprime("As tuas cores favoritas sao:", cores)

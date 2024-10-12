@@ -1,0 +1,23 @@
+# Ordene os elementos de um array em ordem decrescente.
+
+array = [5, 2, 4, 1, 3]
+
+tamanhoArray = tamanho(array) 
+
+
+funcao ordenar_array_decrescente(array, tamanhoArray):
+    para cada i de 0 a tamanhoArray - 1:
+        maiorIndice = i
+            
+        para cada j de i + 1 a tamanhoArray - 1:
+            se array[j] > array[maiorIndice]:
+                maiorIndice = j
+            
+        se maiorIndice != i:  
+            tempArray = array[i]
+            array[i] = array[maiorIndice]
+            array[maiorIndice] = tempArray
+
+ordenar_array_decrescente(array, tamanhoArray)
+
+imprime("Array ordenado: " + array)

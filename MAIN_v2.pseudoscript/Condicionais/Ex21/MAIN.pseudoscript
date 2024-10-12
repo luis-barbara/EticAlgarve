@@ -1,0 +1,4 @@
+# Desenvolva um programa que determine se um número é triangular
+
+entrada("Insira uma número: ", número)
+

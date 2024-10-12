@@ -1,0 +1,31 @@
+# Ordene os elementos de um array em ordem crescente.
+
+array = [5, 2, 4, 1, 3]
+
+tamanhoArray = tamanho(array) 
+
+# Função para ordenar o array em ordem crescente com Selection Sort
+funcao ordenar_array_crescente(array, tamanhoArray):
+    para cada i de 0 a tamanhoArray - 1:
+        # Assume que o primeiro elemento não ordenado é o menor
+        menorIndice = i
+            
+        # Encontrar o menor elemento no subArray não ordenado
+        para cada j de i + 1 a tamanhoArray - 1:
+            se array[j] < array[menorIndice]:
+                menorIndice = j
+            
+        # Troca o menor elemento encontrado com o primeiro elemento não ordenado
+        se menorIndice != i:  
+            tempArray = array[i]
+            array[i] = array[menorIndice]
+            array[menorIndice] = tempArray
+
+ordenar_array_crescente(array, tamanhoArray)
+
+imprime("Array ordenado: " + array)
+
+
+/* para i de 0 a n-1
+    encontrar o menor numero entre os numeros[i] e numeros[i-1]
+    trocar o menor numero com numeros[i] */

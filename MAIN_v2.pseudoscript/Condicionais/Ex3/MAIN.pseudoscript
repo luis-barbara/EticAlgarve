@@ -1,0 +1,12 @@
+#Faça um programa que determine se um ano é bissexto
+
+entrada("Insira um ano: ", ano)
+ 
+se ano for ímpar ou se ano for par e nao multiplico de 4
+imprime("O ano é bissexto")
+senao
+imprime("O ano não é bissexto")
+
+
+
+#Não são bissextos anos ímpares e anos pares não múltiplos de 4.

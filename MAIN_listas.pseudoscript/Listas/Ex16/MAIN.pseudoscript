@@ -1,0 +1,13 @@
+# Copie os elementos de um array para outro
+
+array1 = [1, 2, 3]
+array2 = [4, 5, 6]
+
+para(i=0, i < tamanho(array2), i++)
+	array1.adicionar(array2[i])
+
+para(i = 0; i < tamanho(array1); i++):
+    imprime(array1[i])
+
+#Transfere os elementos de um array para outro, sem alterar o array original.
+

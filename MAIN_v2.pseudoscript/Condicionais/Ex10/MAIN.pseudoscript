@@ -1,0 +1,18 @@
+#Crie um programa que determine se um triângulo é equilátero, isósceles ou escaleno.
+
+entrada("Insere comprimento 1: ", comprimento_1)
+entrada("Insere comprimento 2: ", comprimento_2)
+entrada("Insere comprimento 3: ", comprimento_3)
+
+se comprimento_1 = comprimento_2 = comprimento_3
+	imprime("O triãngulo é equilátero")
+senao comprimento_1 =/ comprimento_2 =/ comprimento_3
+	imprime("O triãngulo é Escaleno")
+senao
+	imprime("O triângulo é Isósceles")
+
+/*
+Equilátero: 3 lados iguais, 3 ângulos de 60°.
+Isósceles: 2 lados iguais, 1 lado diferente, 2 ângulos iguais.
+Escaleno: 3 lados diferentes, 3 ângulos diferentes
+*/

@@ -1,0 +1,11 @@
+#Escreva um programa que determine se um número é positivo, negativo ou zero.
+
+entrada("Insira um valor numérico inteiro: ", valor)
+se valor for >= 0
+    imprime("o valor é positivo")
+se valor for < 0
+    imprime("o valor é negativo")
+se valor for = 0
+    imprime("o valor é zero")
+se nao for um número
+    imprime("Insere um valor inteiro")

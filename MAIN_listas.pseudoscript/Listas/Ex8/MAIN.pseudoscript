@@ -1,0 +1,9 @@
+# Verifique se um elemento está presente num array.
+
+entrada("Qual a marca do carro que gostaria de comprar?", marca)
+carros = [volvo, bmw, seat, ford]
+se marca em carros
+	imprime("Ótimo, nós temos essa marca disponivel para venda")
+senao 
+	imprime("Infelizmente, essa marca está esgotada")
+

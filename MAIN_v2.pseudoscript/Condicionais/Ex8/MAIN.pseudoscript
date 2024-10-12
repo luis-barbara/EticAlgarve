@@ -1,0 +1,12 @@
+#Escreva um programa que determine se um caractere é uma vogal ou consoante.
+
+entrada("Insere um caractere: ", char) #converter para minusculas? ou existe alguma função que admite tanto maiusculas como minusculas?
+
+listaVogais = [a, e, i , o , u]
+
+verificar se char é uma letra
+se char estiver em listaVogais
+	imprime("O cacatere inserido é uma vogal")
+senao
+	imprime("o caractere inserido não é uma vogal")
+

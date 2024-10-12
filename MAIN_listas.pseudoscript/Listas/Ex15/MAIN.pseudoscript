@@ -1,0 +1,41 @@
+# Concatene dois arrays.
+
+funcao tamanho(array):
+	return array.tamanho()
+
+array1 = [1, 2, 3]
+array2 = [4, 5, 6]
+resultado = []
+
+para(i=0, i < tamanho(array1), i++)
+	resultado.adicionar(array1[i])
+
+para(i=0, i < tamanho(array2), i++)
+	resultado.adicionar(array2[i])
+
+para(i=0, i < tamanho(resultado), i++)
+	imprime(resultado[i])
+
+
+ou
+
+
+funcao tamanho(array):
+	return array.tamanho()
+
+funcao adicionarArray(array, resultado)
+	para(i=0, i < tamanho(array), i++)
+		resultado.adicionar(array[i])
+
+array1 = [1, 2, 3]
+array2 = [4, 5, 6]
+resultado = []
+
+adicionarArray(array1, resultado)
+adicionarArray(array2, resultado)
+
+para(i=0, i < tamanho(resultado), i++)
+	imprime(resultado[i])
+
+
+# Concatenar dois arrays significa juntar os elementos de ambos em um único array

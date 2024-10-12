@@ -1,0 +1,26 @@
+# Some duas matrizes e armazene o resultado numa terceira matriz.
+
+matriz_1 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+matriz_2 = [
+    [9, 8, 7],
+    [6, 5, 4],
+    [3, 2, 1]
+]
+
+matriz_resultado = []
+
+para i de 0 até 2
+	linha_resultado = []
+	para j de 0 até 2
+		resultado = matriz_1[i][j] + matriz_2[i][j]
+	linha_resultado.adicionar(resultado)
+	matriz_resultado.adicionar(linha_resultado)
+
+para cada linha em matriz_resultado		
+	imprime(linha)
+

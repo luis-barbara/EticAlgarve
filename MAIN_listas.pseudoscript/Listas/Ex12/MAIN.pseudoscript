@@ -1,0 +1,3 @@
+# Crie um array com os dias da semana.
+
+dias_semana = [segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sabado, domingo]

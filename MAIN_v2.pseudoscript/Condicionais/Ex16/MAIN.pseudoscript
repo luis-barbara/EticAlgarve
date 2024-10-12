@@ -1,0 +1,9 @@
+/* Faça um programa que determine se uma pessoa pode votar, considerando a idade mínima
+de 16 anos*/
+
+entrada("Insira a sua idade: ", idade)
+
+se idade >= 16
+    imprime("Podes votar")
+senao
+    imprime("Não podes votar, ainda não tens 16 anos")

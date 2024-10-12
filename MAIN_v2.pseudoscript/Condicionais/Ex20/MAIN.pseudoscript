@@ -1,0 +1,21 @@
+# Faça um programa que verifique se uma palavra é um palíndromo
+
+entrada("Insira uma palavra: ", palavra)
+
+# Remove espaços e converte a palavra para minúsculas
+palavra = remover_espaços(palavra)
+palavra = converter_palavra_minusculas(palavra)
+
+# Inverte a palavra
+palavra_invertida = inverter_palavra(palavra)
+
+# Verifica se a palavra é igual à palavra invertida
+se palavra = palavra_invertida
+    imprime("A palavra é um palíndromo.")
+senao
+    imprime("A palavra não é um palíndromo.")
+
+
+
+/*Um palíndromo é uma palavra ou frase que tenha a propriedade de poder ser lida tanto da direita para a esquerda como da esquerda para a direita*/
+

@@ -1,0 +1,16 @@
+#Desenvolva um programa que calcule a média de três notas e indique se o aluno foi
+aprovado (média >= 7) ou reprovado.
+
+entrada("Insere a nota 1: ", nota_1)
+entrada("Insere a nota 2: ", nota_2)
+entrada("Insere a nota 3: ", nota_3)
+
+função média(nota_1, nota_2, nota_3)
+	resultado = média(nota_1 + nota_2 + nota_3)
+	retorne resultado
+
+Se média(nota_1, nota_2, nota_3) >= 7
+	imprime("Aprovado")
+Senao
+	imprime("Reprovado")
+

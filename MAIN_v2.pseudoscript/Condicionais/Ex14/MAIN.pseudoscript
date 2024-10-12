@@ -1,0 +1,10 @@
+# Crie um programa que verifique se um número é perfeito
+
+entrada("Insira um número: ", número)
+
+se a soma dos divisores do número = numero
+    imprime("É um número perfeito")
+senao
+    imprime("Não é um número perfeito")
+
+/* um número perfeito é um número natural para o qual a soma de todos os seus divisores naturais próprios (excluindo ele mesmo) é igual ao próprio número */

@@ -1,0 +1,57 @@
+# Some os elementos de dois arrays e armazene o resultado num terceiro array.
+
+array1[]
+array2[]
+resultado[]
+
+entrada("Insere 5 números interiors para array1")
+	para(i=0, i < 5, i++)
+		numero1 = entrada("Insere um número", i + 1)
+		array1.adicionar(numero1)
+
+entrada("Insere 5 números interiors para o array2")
+	para(i=0, i < 5, i++)
+		numero2 = entrada("Insere um número", i + 1)
+		array2.adicionar(numero2)
+
+para(i=0, i < 5, i++)
+	resultado[i] = array1[i] + array2[i]
+
+para (i = 0; i < 5; i++)
+	imprime(resultado[i])
+
+
+ou
+
+
+array1 = []
+array2 = []
+resultado = []
+
+funcao insereNumeros(array, nomeArray):
+    para(i=0, i < 5, i++)
+        numero = entrada("Insira um número para " + nomeArray + ":", i + 1)
+        array.adicionar(numero)
+
+insereNumeros(array1, "array1")
+insereNumeros(array2, "array2")
+
+para(i=0, i < 5, i++)
+    resultado[i] = array1[i] + array2[i] //em arrays de tamanho fixo, onde já se sabe o tamanho do array e os índices que vao ser usados
+
+para(i=0, i < 5, i++)
+    imprime(resultado[i])
+
+
+ou
+
+
+array1 = [1, 2, 3, 4, 5]
+array2 = [10, 20, 30, 40, 50]
+resultado = [] 
+
+para(i = 0; i < 5; i++):
+      resultado.adicionar(array1[i] + array2[i]) //Se resultado não tiver um tamanho fixo definido (ou seja, se for uma lista que cresce dinamicamente), esta operação adiciona a soma ao final da lista
+
+para(i = 0; i < 5; i++):
+    imprime(resultado[i])

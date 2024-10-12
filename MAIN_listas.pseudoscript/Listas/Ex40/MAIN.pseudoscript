@@ -1,0 +1,25 @@
+# 'Parta/Quebre/Divida' uma string num array de palavras.
+
+string = "O meu nome é Luis"
+resultado = []
+
+funcao dividirStringPalavras(string)
+    palavra = ""    # Inicializa uma string vazia para armazenar a palavra atual
+
+    para i de 0 a tamanho(string) -1
+        se string != " "    # Verifica se o caractere não é um espaço
+            palavra = palavra + string[i]       # Adiciona o caractere à palavra atual
+        senao
+            se tamanho(palavra) > 0     # Verifica se a palavra não está vazia
+            resultado.adicionar(palabvra)    # Adiciona a palavra ao array
+            palavra = " "       # Reinicia a palvra atual
+
+    se tamano(palavra) > 0      # Adiciona a última palavra se houver
+        resultado.adicionar(palabvra)
+
+    retornar resultado
+
+arrayPalavras = dividirStringPalavras(string)
+
+para i de 0 até tamanho(palavras) -1
+    imprime(arrayPalavras[i])

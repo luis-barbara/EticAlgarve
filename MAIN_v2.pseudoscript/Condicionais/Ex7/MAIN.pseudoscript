@@ -1,0 +1,19 @@
+#Faça um programa que determine se um número é primo.
+
+#função verificar se o número é primo
+função primo(n)
+    verifica se n < 2 
+        return false
+    Loop para verificar se n é divisível por qualquer número de 2 até a raiz quadrada de n
+        return false se encontrar um divisor, caso contrário, returna True.
+
+entrada("Insira um número: ", número)
+
+# Verifica se o número é primo
+se primo(número)
+    imprime("O número é primo")
+senao
+    imprime("O número não é primo")
+
+
+/*Se um número n é divisível por qualquer número inteiro entre 2 e sua raiz quadrada, ele não é primo

@@ -1,0 +1,5 @@
+# Verifique o tamanho de um array.
+
+carros = [volvo, bmw, seat, ford]
+tamanho_lista_carros = tamanho(carros) ou carros.tamanho() 
+imprime(tamanho_lista_carros)

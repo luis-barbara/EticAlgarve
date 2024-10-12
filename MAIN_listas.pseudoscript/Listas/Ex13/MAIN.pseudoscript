@@ -1,0 +1,7 @@
+# Preencha um array com os meses do ano.
+
+meses = [janeiro, fevereiro, março, abril, 
+maio, junho, julho, agosto, 
+setembro, outubro, novembro, dezembro]
+
+imprime(meses)

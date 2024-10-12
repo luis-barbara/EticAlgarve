@@ -1,0 +1,58 @@
+# Remova o último elemento de um array.
+
+lista = [1, 2, 3, 4, 5, 6]
+nova_lista =[]
+
+tamanho = lista.tamanho()
+
+para (i=0, i < tamanho - 1, i++)
+	nova_lista.adicionar(lista[i])
+
+
+tamanho_nova_lista = nova_lista.tamanho()
+
+para (i=0; i < tamanho_nova_lista; i++)
+	se (i < tamanho_nova_lista - 1)
+		imprime(nova_lista[i] + ", ")
+	senao
+		imprime(nova_lista[i])
+
+ou
+
+lista = [1, 2, 3, 4, 5, 6]
+nova_lista =[]
+
+tamanho = lista.tamanho()
+
+para (i=0, i < tamanho - 1, i++)
+	nova_lista.adicionar(lista[i])
+
+tamanho_nova_lista = nova_lista.tamanho()
+
+para (i=0, i < tamanho_nova_lista, i++)
+	imprime(nova_lista[i])
+
+
+ou
+
+
+lista = [1, 2, 3, 4, 5, 6]
+tamanho = lista.tamanho()
+
+nova_lista = lista[0 : tamanho - 1]
+tamanho_nova_lista = nova_lista.tamanho()
+
+para (i=0; i < tamanho_nova_lista; i++)
+	se (i < tamanho_nova_lista - 1)
+		imprime(nova_lista[i] + ", ")
+	senao
+		imprime(nova_lista[i])
+
+ou
+
+lista = [1, 2, 3, 4, 5, 6]
+tamanho = lista.tamanho()
+
+nova_lista = lista[0 : tamanho - 1]
+
+imprime(nova_lista)

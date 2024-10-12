@@ -1,0 +1,17 @@
+#  Inverta uma string
+
+string = "Ola, Mundo!"
+
+tamanhoString = tamanho(string)
+
+funcao inverterString(string)
+    string_invertida = ""
+
+    para i de tamanhoString até 0 passo -1
+        string_invertida = string_invertida + string[i]
+    
+    retorna string_invertida
+
+string_invertida = inverterString(string)
+
+imprime("S string invertida é:", string_invertida)
